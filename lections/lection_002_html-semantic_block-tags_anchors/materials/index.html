@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        Тезисы:
+            xx:09:00 - chrome inspector + Emmet
+            xx:30:30 - using div, span, img (src, alt, width, height, align)
+            01:03:25 - absolute and relative path, links
+            xx:yy:zz - table - tr, td, th, border, cellpadding, cellspacing,
+            xx:yy:zz - table - rowspan, colspan
+
+        
+        Практика:
+            - practice with table, cell union (merge)
+    -->    
+
+    <h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At iusto incidunt adipisci ducimus voluptates itaque nihil voluptatibus explicabo mollitia veniam? Ipsum dolorum accusantium architecto ratione asperiores, consequuntur corrupti inventore dolor.
+    </h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Porro, beatae quisquam! Doloremque, quia optio error harum atque reprehenderit sapiente a? 
+        Aliquid tempora esse veniam, reiciendis quasi amet animi nihil incidunt!Aut at magnam corrupti fugit
+        eligendi aliquid molestiae cumque quo quisquam, consectetur accusamus distinctio ad minima sapiente voluptate voluptatum optio ratione amet voluptates sit id. Tempore, modi sunt. Consequuntur, dolorum!</p>
+
+    
+        <!-- div span -->
+
+
+        <div>
+            hello world
+        </div>
+        <div>
+            hello world - 2
+        </div>
+
+        <span>click    </span>
+        <span>click - 2</span>
+        <span>click - 3</span>
+
+        <hr />
+        <!--- ------------------------------------------------    -->
+
+        <div>
+            <div>
+                Header
+            </div>
+            <div>
+                Content
+                <div>Block - 1</div>
+                <div>Block - 2</div>
+            </div>
+            <div>
+                footer
+            </div>
+        </div>
+
+
+        <!-- bad -->
+
+        <div>
+            Header
+            Content
+            footer
+        </div>
+
+
+    <!-- emmet  -->
+
+    <!-- <div></div> -->
+    <div class="foo"></div>
+    
+    <!-- + ->div+span+div+p+h2+h1+h3 -->
+
+    <div></div>
+    <span></span>
+    <div></div>
+    <p></p>
+    <h2></h2>
+    <h1></h1>
+    <h3></h3>       
+    
+    <!-- >   div>span>strong -->
+
+    <!-- div>span{Click span}>strong{Click} -->
+
+
+    <!-- div>(div>span{Click span}+strong{Click})+(div>a{go to google}) -->
+    <!-- div>div{header}+(div{content}>div{block-1}+div{block-2})+div{footer} -->
+    
+    <div>
+        <div>header</div>
+        <div>
+            content
+            <div>block-1</div>
+            <div>block-2</div>
+        </div>
+        <div>footer</div>
+    </div>
+
+
+    <!-- div{Hello}[align=center] -->
+    
+    <div align="center">Hello</div>
+
+    <!-- div{block-$}*5 -->
+    <div>block-1</div>
+    <div>block-2</div>
+    <div>block-3</div>
+    <div>block-4</div>
+    <div>block-5</div>
+
+    <!-- anchor -->        
+    <hr />
+
+    Absolute path:
+    <a href="https://www.google.com.ua/search">got To link</a>
+
+    <a href="E:/Work/Hillel-Basic/front-end-basic-online-2020-june/lections/lection_002_html-semantic_block-tags_anchors/materials/portfolio/contacts.html">
+        got To link - 2
+    </a>
+    <br />
+
+    Relative path:
+
+    <a href="./portfolio/contacts.html">Relative path</a>
+
+
+    <!-- img -->
+    <br />
+
+
+    Lorem ipsum dolor sit amet consectetur adipisici
+
+    <img src="./img/cat1.jpg" 
+    width="200px" 
+    alt="Cat hwl"
+
+    title="Это кошка"/>
+
+
+    
+
+
+    <!-- align ? hw -->
+</body>
+</html>
