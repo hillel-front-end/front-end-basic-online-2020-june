@@ -1,0 +1,24 @@
+.menu {
+    text-align: right;
+}
+
+.header-menu {
+    color: red;
+    font-size: 30px;
+}
+
+.footer .footer-menu {
+    color: greenyellow;
+    font-size: 25px;
+}
+
+.row-line {
+    height: 5px;
+    background-color: red;
+}
+
+.center {
+    width: 90%;
+    margin: 10px auto;
+}
+

@@ -1,0 +1,87 @@
+/* 
+
+selector {
+    property: value;
+    property1: value2;
+    ...
+    propertyn: valuen;
+}
+
+*/
+
+/* by type */
+
+/* div {
+    text-align: center;
+}
+
+p {
+    text-align: right;
+} */
+
+/* by class . */
+
+/* .container {
+    text-align: justify;
+}
+
+.text-color {
+    color: red;
+}
+
+.block-1 {
+    color: yellow; */
+/* } */
+
+/* by id #*/
+
+/* #auth {
+    background-color: red;
+} */
+
+/* div {
+    color: blue;
+} */
+
+/* .parent div {
+    color: pink;
+} */
+
+/* .parent .child  {
+    color: pink;
+} */
+
+/* .parent .child .child-2 {
+    color: pink;
+}
+
+
+ul {
+    list-style: none;
+}
+
+.menu-item {
+    color: gold;
+}
+
+.menu-item.active {
+   color: greenyellow; 
+}
+
+* {
+    text-decoration: none;
+} */
+
+/* by attr [] */
+
+
+[data-foo] {
+    color: red;
+}
+
+[data-foo="hello"] {
+    color: yellow;
+}
+
+/* ----------------------------------------------------------- */
+
