@@ -1,0 +1,122 @@
+
+
+/* .foo {
+    font-size: 25px;
+    color: red;
+}
+
+
+.foo {
+    background: black;
+    color: yellow;
+} */
+
+#wrapper .foo .text {
+    color: pink;
+}
+
+#wrapper .foo span {
+    /* color: red !important;  ->bad */
+    color: red;
+}
+
+
+.block {
+    /* border-color: red; */
+    /* border-style: solid; */
+    /* border-style: dashed; */
+    /* border-style: dotted; */
+    /* border-width: 5px;  */
+
+    /* border: border-width border-style border-color*/
+    /* border: 5px solid greenyellow; */
+
+    border-left: 10px solid red;
+    border-right: 5px solid blue;
+    border-bottom: 8px solid yellow;
+    border-top: 8px solid blueviolet;
+}
+
+.inline {
+    border: 1px solid red;
+}
+
+.block-1 {
+    border: 1px solid salmon;
+    /* padding: 10px; */
+
+    /* padding-left: 10px;
+    padding-bottom: 15px;
+    padding-top: 20px;
+    padding-right: 25px; */
+
+    /* padding: 5px 10px 5px 10px; */
+    padding: 5px 10px;
+}
+
+.block-radius {
+    border-radius: 10px;
+    /* border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px; */
+    /* border-radius: 5px 5px 5px 5px; */
+    /* border-radius: 50%; */
+}
+
+.inline-2 {
+    background-color: black;
+    border: 1px solid red;
+    border-radius: 5px;
+    color: white;
+    /* padding: 10px; */
+}
+
+.header {
+    border: 1px solid red;
+}
+
+.logo {
+    padding: 10px;
+    border: 1px solid yellow;
+}
+
+.block-indent {
+    width: 50%;
+    /* margin: 10px; */
+    margin-bottom: 10px;
+    /* margin-top: 14px; */
+    /* margin: 16px 15px 18px 11px; */
+    /* margin: 10px 20px; */
+
+    /* margin: 0px auto; */
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* .block-3 { */
+    /* display: none; */
+    /* display: block; */
+    /* display: inline; */
+    /* display: inline-block; */
+/* } */
+
+.prop {
+    /* border: 1px solid red; */
+    background-color: red;
+}
+
+.prop-2 {
+    /* border: 1px solid red; */
+    background-color: gray;
+}
+
+.h-row {
+    display: inline-block;
+    width: 50%;
+    /* margin-right: -4px; */
+    font-size: 16px;
+}
+
+.parent {
+    font-size: 0px;
+}

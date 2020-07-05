@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        body {
+            height: 60000px;
+            border: 1px solid blue;
+        }
+        .a {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        Тезисы:
+            - box model - intro
+            - border, border-radius
+            - padding
+            - margin, auto
+            
+        Практика:
+            - display - inline, block
+            - inline-block
+    -->
+
+
+    <!--------------------- specificity ------------------>
+
+    <div class="foo">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero doloremque eum modi quia amet ipsum veritatis, fugit excepturi veniam eius accusamus sapiente provident asperiores deserunt natus quae ducimus molestias ad.Quod ratione rerum eum minus voluptatem dolor, voluptatibus quaerat consequatur ipsa obcaecati fugit impedit deserunt sunt fuga! Tempore quasi necessitatibus, vero accusantium suscipit, distinctio 
+        totam qui, doloremque recusandae ullam ratione?
+    </div>
+
+    <hr /> 
+<!--     
+    <div id="wrapper">
+        <div class="foo">
+            <span class="text" style="color: blue;"> 
+                text
+            </span>
+        </div>
+    </div> -->
+
+    <!-- <p>
+        #wrapper .foo .text {} -> 100 + (2 *10) + 0 = 120
+        <br />
+        #wrapper .foo span strong {} -> 100 + 10 + 1 = 111
+        <br> 
+        120 > 111 => 120( #wrapper .foo .text )
+    </p> -->
+    
+    <!-- <table cellspacing="10px" cellpadding="10px" border="1px">
+        <tr>
+            <th> attr style(1000)</th>
+            <th>id(100)</th>
+            <th>class(10)</th>
+            <th>tag(1)</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td>1</td>
+            <td>2</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>1</td>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+    </table>
+
+    <hr />  -->
+    <!----------------------- box-model--------------------------- -->
+
+    <!-- border -->
+    <!-- <div class="block">
+        hello 
+    </div>
+    <br />
+    <span class="inline">
+        inline
+    </span>
+    <hr /> -->
+    <!-- padding + radius -->
+    <!-- <div class="block-1 block-radius">
+        hello 
+    </div>
+    <div class="block-1 block-radius">
+        hello - 2
+    </div>
+    <br />
+    <hr>  -->
+    <!-- <div class="header" style="border: 1px solid black">
+        <span class="inline-2">
+            inline-2
+        </span>
+    </div> -->
+
+    <!-- <div style="border: 1px solid black">
+        <div>
+            block-2
+        </div>
+    </div> -->
+
+    <!-- <div class="header">
+        <span class="logo">LOGO</span>
+    </div> -->
+
+    <!--------------------- margin ------------------->
+
+    <div class="block-1 block-indent">
+        block - 1
+    </div>
+    
+    <!-- <div class="block-1">
+        block - 2
+    </div> -->
+
+    <!-- № 1- Важно знать : 
+
+         margin: 0 auto;  - при этом если дочерни блок меньше родительского блока, 
+        то дочерний блок- будетотцентрирован по горизонатали. 
+        Для вертикали margin-top,margin-bottom "auto = 0". 
+    -->
+
+    <!-- display: none, inline, block, inline-block -->
+
+    <!-- <div class="block-3">
+        helllo block
+    </div>
+    <p>123</p>
+
+    <span> 123123 </span> -->
+
+
+    <!------------------ display: inline-block------------------ -->
+
+    <div class="parent">
+        <div class="block-3 prop h-row">
+            hello inline-block
+        </div>
+        <div class="block-3 prop-2 h-row">
+            hello inline-block - 2
+        </div>
+    </div>
+
+</body>
+</html>
