@@ -46,7 +46,7 @@ body {
 
 .block-left {
     width: 25%;
-    float: left;
+    /* float: left; */
 }
 
 .block-right {
@@ -70,3 +70,75 @@ body {
     width: 30%;
     float: left;
 }
+
+/* position */
+.pos {
+    /* position: static; */
+    /* position: absolute; */
+    position: fixed;
+    left: 0px;
+    top: 0px;
+}
+
+/* .menu-wrapper {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.menu {
+    display: inline-block;
+    border: 1px solid black;
+}
+
+.menu-item {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid red;
+    float: left;
+    margin-right: 5px;
+}
+ */
+
+ ul {
+     padding: 0px;
+     margin: 0px;
+     list-style: none;
+ }
+
+ .header {
+     /* border: 1px solid blue; */
+     text-align: center;
+ }
+
+ .clearfix {
+     clear: both;
+ }
+
+ .menu {
+    display: inline-block;
+ }
+
+ .menu > .menu-item {
+     float: left;
+     margin-right: 5px;
+     position: relative;
+ }
+
+ .menu .menu-item > .menu-button {
+     display: inline-block;
+     padding: 5px;
+     background-color: black;
+     color: red;
+     border-radius: 5px;
+ }
+
+ .menu .menu-dropdown {
+     background-color: grey;
+     border: 1px solid black;
+     color: yellow;
+     width: 100px;
+
+     position: absolute;
+     top: calc(100% + 4px);
+     left: 0px;
+ }
