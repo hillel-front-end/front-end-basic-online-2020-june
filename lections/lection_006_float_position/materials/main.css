@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    /* width: 100px;
+    height: 100px; */
+    border: 1px solid red;
+    font-size: 100px;
+}
+
+.float-l {
+    /* display: inline-block; */
+    float: left;
+    /* float: left; */
+}
+
+.float-r {
+    float: right;
+}
+
+.container {
+    border: 1px solid red;
+}
+
+.block {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+.text {
+    border: 3px solid red;
+}
+
+.block-left, .block-right {
+    /* width: 50%; */
+    border: 1px solid blue;
+    height: 100px;
+}
+
+.block-left {
+    width: 25%;
+    float: left;
+}
+
+.block-right {
+    width: 50%;
+    float: right;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.right-side {
+    margin-left: 30%;
+    border: 1px solid red;
+    height: 500px;
+}
+
+.left-side {
+    height: 500px;
+    border: 1px solid blue;
+    width: 30%;
+    float: left;
+}
