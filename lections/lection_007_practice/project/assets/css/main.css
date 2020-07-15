@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    background-image: url('../img/moroccan-flower.png');
+    background-color: gray;
+    font-family: 'OpenSans';
+}
+
+.container {
+    width: 90%;
+    max-width: 1400px;
+}
