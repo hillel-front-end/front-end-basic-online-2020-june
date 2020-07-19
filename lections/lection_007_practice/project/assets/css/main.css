@@ -11,9 +11,100 @@ body {
     background-image: url('../img/moroccan-flower.png');
     background-color: gray;
     font-family: 'OpenSans';
+    padding-top: 30px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.block-align-left {
+    float: left;
+}
+
+.block-align-right {
+    float: right;
 }
 
 .container {
-    width: 90%;
+    width: 85%;
     max-width: 1400px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.header {
+    position: relative;
+}
+
+.logo-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.logo {
+    background-color: #ff4385;
+    color: #ffff;
+    display: inline-block;
+    padding: 5px 9px;
+    border-radius: 4px;
+    font-size: 35px;
+}
+
+.logo-desc {
+    position: absolute;
+    width: 100px;
+    left: calc(100% + 8px);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.abs-align-ver {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu > .menu-item {
+    color: #000000;
+    font-weight: bold;
+    padding: 5px 15px;
+}
+
+.menu > .menu-item.active {
+    background-color: #000000;
+    color: white;
+    border-radius: 5px;
+}
+
+.poster {
+    padding: 36px;
+    background-color: #fff;
+}
+
+.poster-block-left, .poster-block-right {
+    width: 50%;
+}
+
+.button {
+    display: inline-block;
+    background-color: #0090c5;
+    color: #fff;
+    position: relative;
+    padding: 6px 6px;
+    padding-right: 104px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.button-icon {
+    position: absolute;
+    right: 0px;
+    color: black;
+    font-size: 15px;
+}
+
+.poster-button-icon {
+    right: 16px;
 }

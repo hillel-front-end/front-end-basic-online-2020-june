@@ -136,9 +136,24 @@ body {
      background-color: grey;
      border: 1px solid black;
      color: yellow;
+    /* display: none; */
+    /* height: 0px; */
      width: 100px;
-
+        opacity: 0;
+     visibility: hidden;
      position: absolute;
      top: calc(100% + 4px);
      left: 0px;
+    cursor: pointer;
+    transition: all 1s;
+ }
+
+
+
+ .menu-item:after {
+    content:'';
+ }
+ .menu-item:hover .menu-dropdown {
+    opacity: 1;
+    visibility: visible;
  }
