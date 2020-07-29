@@ -102,22 +102,77 @@ $color_green: green;
 // $jc: center;
 // $ai: flex-end;
 
-@mixin flex($fd, $jc, $ai) {
-    display: flex;
-    flex-direction: $fd;
-    justify-content: $jc;
-    align-items: $ai;
-}
+
+// ---------- mixin + params ------
+// @mixin flex($fd, $jc, $ai) {
+//     display: flex;
+//     flex-direction: $fd;
+//     justify-content: $jc;
+//     align-items: $ai;
+// }
+
+
 
 .foo2 {
     // @include flex-center();
-    @include flex(row, center, flex-end);
+    // @include flex(row, center, flex-end);
 
 }
 
-.foo3 {
-    // @extend %flex-center;
-    // @include flex-center();
-    @include flex(column, space-between, center);
+
+// @content + @mixin 
+
+@mixin flex {
+    @content;
 }
 
+// .foo3 {
+//     // @extend %flex-center;
+//     // @include flex-center();
+//     // @include flex(column, space-between, center);
+// }
+
+// "className": ".diagram-container",
+$diagram: (
+    "className": ".diagram-container",
+    "width": 200px,
+    "height": 200px,
+    "color": red,
+    "font-size": 30px,
+    "background-color": blue
+);
+
+// ma-get(map, key)
+// map-get($diagram, "className")
+
+// #{map-get($diagram, "className")} {
+//     width: map-get($diagram, "width");
+//     height: map-get($diagram, "width");
+//     font-size: map-get($diagram, "font-size"); 
+// }
+
+// !=, ==
+// .foo-7 {
+//     @each $key, $value in $diagram {
+//         @if $key != "className" { // key = "className"
+//             #{$key}: #{$value};
+//         }
+//     }
+// }
+
+// 1 $var: 1
+// 2 $var: 2
+
+// .gallery-item {
+// //    background-color; 
+// }
+
+$gallery-item-width: 200px;
+$galler-indent: 10px;
+
+@for $var from 1 through 3 {
+    .gallery-item-#{$var}:nth-child(#{$var}) {
+        color: blue;
+        background-position-x: $var * ($gallery-item-width + $galler-indent);
+    }
+}
