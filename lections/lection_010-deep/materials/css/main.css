@@ -1,0 +1,60 @@
+.container {
+  font-size: 12px;
+}
+.container .header {
+  color: green;
+}
+.container .drop-down__menu-item {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid red;
+}
+.container .drop-down__menu-item:hover {
+  border: 1px solid green;
+}
+.container .drop-down__menu-item:after {
+  content: '123';
+}
+.container .drop-down__menu-item.foo {
+  color: white;
+}
+.container #footer {
+  color: white;
+}
+
+.header, .footer, .poster, .gallery, .foo {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header, .footer, .gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  color: red;
+  border: 1px solid red;
+}
+
+.footer {
+  background-color: red;
+}
+
+.foo2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.foo3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*# sourceMappingURL=main.css.map */

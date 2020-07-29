@@ -1,0 +1,53 @@
+/*--------- loptop version ---------- */
+
+* {
+    box-sizing: border-box;
+} 
+
+.container {
+    display: flex;
+    border: 1px solid red;
+    padding: 10px;
+}
+
+.container .box {
+    width: 50%;
+    border: 1px solid blue;
+    height: 100px;
+    font-size: 60px;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .box:first-child, .container .box:last-child {
+    width: 25%;
+    border: 1px solid blue;
+}
+
+
+/*--------- table version ---------- */
+@media screen and (max-width: 1100px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .container .box:first-child {
+        width: 100%;
+    }
+    
+    .container .box:nth-child(2), .container .box:last-child {
+        width: 50%;
+    }
+    
+}
+
+
+/*--------- mobile version ---------- */
+@media screen and (max-width: 400px) {
+    #parent.container .box {
+        width: 100%;
+    }
+}

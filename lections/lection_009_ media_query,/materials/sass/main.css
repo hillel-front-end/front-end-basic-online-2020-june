@@ -1,0 +1,21 @@
+.container {
+	font-size: 15px;
+}
+
+.container .foo {
+	color: green;
+	border: 1px dashed green;
+	width: 300px;
+	height: 300px;
+}
+
+.container .foo .link {
+	color: green;
+}
+
+.container .box {
+	width: 100px;
+	height: 100px;
+	border: 1px solid green;
+	background: green;
+}

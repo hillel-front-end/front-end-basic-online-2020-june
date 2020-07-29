@@ -1,0 +1,123 @@
+$color_green: green;
+
+.container {
+    font-size: 12px;
+    .header {
+        color: $color_green;
+    }
+
+    .drop-down__menu-item {
+        display: inline-block;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid red;
+        &:hover {
+            border: 1px solid $color_green;
+        }
+
+        &:after {
+            content: '123';
+        }
+
+        &.foo {
+            color: white;
+        }
+        
+    }
+
+    // .button:hover {
+    //     border: 1px solid green;
+    // }   
+
+    // .button:after {
+    //     content: '123';
+    // }
+
+    $selector: '#footer';
+
+    #{$selector} {
+        color: white;
+    }
+
+}
+
+
+// ------ css fragment + extend ---------
+%center {
+    width: 80%;
+    margin: 0 auto;
+}
+
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    color: red;
+    border: 1px solid red;
+    @extend %center;
+    @extend %flex-center;
+}
+
+.footer {
+    background-color: red;
+    @extend %center;
+    @extend %flex-center;
+}
+
+.poster {
+    @extend %center;
+}
+
+.gallery {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    @extend %flex-center;
+    @extend %center;
+}
+
+.foo {
+    @extend %center;
+}
+
+// ---------- mixin ------
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-row {
+    display: flex;
+    font-display: row;
+    justify-content: center;
+    align-items: center;
+}
+
+// $fd: column;
+// $jc: center;
+// $ai: flex-end;
+
+@mixin flex($fd, $jc, $ai) {
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+.foo2 {
+    // @include flex-center();
+    @include flex(row, center, flex-end);
+
+}
+
+.foo3 {
+    // @extend %flex-center;
+    // @include flex-center();
+    @include flex(column, space-between, center);
+}
+

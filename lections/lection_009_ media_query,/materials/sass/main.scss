@@ -1,0 +1,22 @@
+$color: green;
+
+.container {
+    font-size: 15px;
+    .foo {
+        color: $color;
+        border: 1px dashed $color;
+        width: 300px;
+        height: 300px;
+        
+        .link {
+            color: $color;
+        }
+    }
+
+    .box {
+        width: 100px;
+        height: 100px;
+        border: 1px solid $color;
+        background: $color;
+    }
+}
