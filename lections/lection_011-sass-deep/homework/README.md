@@ -1,8 +1,7 @@
 ﻿# Домашняя работа
 
-1)Доделать практику чтоб все работало правильно и красиво
-2)Читаем материалы лекции
-3)Читаем информационные ресурсы:
+* https://tproger.ru/translations/complete-sass-guide/#sass-trigonometry
+* https://www.youtube.com/watch?v=H4cG4tbc-xQ&list=TLPQMzAwNzIwMjACQlTMInRCyw&index=1
 
 # Практика
 
