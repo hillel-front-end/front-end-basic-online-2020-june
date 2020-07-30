@@ -1,7 +1,6 @@
 ﻿# Домашняя работа
 
-* https://tproger.ru/translations/complete-sass-guide/#sass-trigonometry
-* https://www.youtube.com/watch?v=H4cG4tbc-xQ&list=TLPQMzAwNzIwMjACQlTMInRCyw&index=1
+* https://webdesign-master.ru/blog/tools/2016-06-04-sass.html
 
 # Практика
 
