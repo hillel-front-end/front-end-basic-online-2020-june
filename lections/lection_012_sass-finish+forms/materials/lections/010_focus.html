@@ -1,0 +1,64 @@
+<!--
+    Псевдокласс :focus определяет стиль для элемента, получающего фокус. Например, им может быть текстовое поле формы, в которое устанавливается курсор.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Focus</title>
+    <style>
+        input{
+            border-radius: 5px;
+            outline:none;
+            border: 3px solid red;
+        }
+        
+        input:focus{
+            border: 3px solid greenyellow;
+            background: #dde832;
+        }
+
+        .cloud{
+            opacity: 0;
+            transition: all 1s;
+            padding: 10px;
+            border: 1px solid black;
+            background: #eee;
+            border-radius: 20px;
+        }
+
+         /* +, ~ */
+
+        #name-1 {
+            border: 1px solid red;
+        }
+
+        #name-1:hover ~ .cloud{
+            opacity: 1;
+        }
+
+        #name:focus ~ .cloud{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <div id="name-1">
+        <div class="cloud"></div>
+    </div> -->
+<!-- 
+    <div id="name-1">id name</div>
+    <span>span</span>
+    <div class="cloud">123</div> -->
+
+    
+    <label for="name">Имя</label>
+
+
+    <input type="text" id="name">
+    <span class="cloud">
+        Hello world
+    </span>
+</body>
+</html>

@@ -5,7 +5,8 @@
   color: green;
 }
 .container .drop-down__menu-item {
-  display: inline-block;
+  .
+        display: inline-block;
   padding: 10px;
   border-radius: 10px;
   border: 1px solid red;
@@ -56,6 +57,31 @@
 .gallery-item-3:nth-child(3) {
   color: blue;
   background-position-x: 630px;
+}
+
+.container {
+  font-size: 12px;
+}
+.container .header {
+  color: green;
+}
+@media screen and (max-width: 1200px) {
+  .container .header {
+    color: blue;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .container .header {
+    color: blue;
+    width: 33.33%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .container .header {
+    color: blue;
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

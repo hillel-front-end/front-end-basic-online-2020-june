@@ -4,9 +4,20 @@ $color_green: green;
     font-size: 12px;
     .header {
         color: $color_green;
+        @media screen and (max-width: 1200px) {
+            
+        }
+
+        @media screen and (max-width: 768px) {
+            
+        }
+
+        @media screen and (max-width: 420px) {
+            
+        }
     }
 
-    .drop-down__menu-item {
+    .drop-down__menu-item {.
         display: inline-block;
         padding: 10px;
         border-radius: 10px;
@@ -22,7 +33,7 @@ $color_green: green;
         &.foo {
             color: white;
         }
-        
+
     }
 
     // .button:hover {
@@ -176,3 +187,43 @@ $galler-indent: 10px;
         background-position-x: $var * ($gallery-item-width + $galler-indent);
     }
 }
+
+
+$breakpoints: (
+    desktop: 1200px,
+    laptop: 1100px,
+    tablet: 900px,
+    mobile: 450px 
+);
+// breakpoint == 768px
+// map-get($breakpoints, $platform) =>900px
+@mixin media($platform, $breakpoint) {
+    @if map-get($breakpoints, $platform) == $breakpoint {
+        @media screen and (max-width: $breakpoint) {
+            @content;
+        }
+    }
+}
+
+.container {
+    font-size: 12px;
+    .header {
+        color: $color_green;
+        @include media(desktop, 1200px) {
+            color: blue;
+            width: 50%;
+        }
+
+        @include media(tablet, 900px) {
+            color: blue;
+            width: 33.33%;
+        }
+
+        @include media(mobile, 450px) {
+            color: blue;
+            width:  100%;
+        }
+    }
+}
+
+
