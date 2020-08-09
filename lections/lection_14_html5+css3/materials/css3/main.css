@@ -1,0 +1,15 @@
+.box {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: red;
+  transform-origin: bottom right;
+  transition: transform .8s; }
+
+.text-shadow {
+  text-shadow: 17px 3px 3px purple; }
+
+.button:checked ~ .box {
+  transform: scaleX(0); }
+
+/*# sourceMappingURL=main.css.map */

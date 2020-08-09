@@ -1,0 +1,50 @@
+.box {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: red;
+    transform-origin: bottom right;
+    transition: transform .8s;
+}
+
+
+// ----------- shadow --------------
+
+.box-shadow {
+        // box-shadow: [offset-x, offset-y, blur, spread, color]
+
+    // box-shadow: inset -1px 1px 10px 7px black, 83px 66px 10px 2px red;
+}
+
+
+.text-shadow {
+    text-shadow: 17px 3px 3px purple;
+}
+
+// ----------- transform --------------
+
+.button {
+    &:checked ~ .box {
+        // transform: rotate(360deg);
+        transform: scaleX(0);
+    }
+}
+.transform {
+    // transform: translate(10px, 10px);
+    // transform: translateY(100%);
+    // transform: translateX(100%);
+    &:hover {
+        // transform: rotate(720deg); // deg
+        // transform: rotateY(0deg); 
+        // transform: rotate(360deg);
+        // transform: scale(2);
+        // transform: scale(0.5);
+        // transform: scaleY(1.5);
+        // transform: scaleX(0);
+        // transform: skew(-30deg); //deg
+        // transform: skewY(-30deg); 
+        // transform: skewX(30deg); 
+    }
+}
+
+// ----------- animation --------------
