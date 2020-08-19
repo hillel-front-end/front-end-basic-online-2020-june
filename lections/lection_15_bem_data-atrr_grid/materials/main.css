@@ -1,0 +1,38 @@
+.header, .footer {
+  background-color: red;
+  color: white;
+  height: 100px; }
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh; }
+  .main__header, .main__footer {
+    height: 100px;
+    border: 1px solid blueviolet; }
+  .main__content {
+    background-color: blue;
+    height: calc(100vh - 200px); }
+
+.content__header {
+  height: 100px;
+  background-color: blueviolet; }
+.content__title {
+  margin-left: 100px; }
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 30px;
+  display: inline-block;
+  color: yellow; }
+
+.footer__title {
+  color: blue;
+  padding: 20px;
+  border: 1px solid black; }
+  .footer__title--hidden {
+    visibility: hidden; }
+
+/*# sourceMappingURL=main.css.map */
