@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        1. bootstrap
+        2. CSS Vars
+        3. attr + tooltip(example)
+        4. practice(?hw)
+    -->
+
+    <style>
+        :root{
+            --main-color: red;
+        }
+
+
+        .title {
+            color: var(--main-color, yellow);
+        }
+
+        .tooltip {
+            position: relative;
+        }
+
+        body {
+            padding-left: 100px;
+        }
+
+        .tooltip:after {
+            content: 'Hello world';
+            position: absolute;
+            left: var(--left, initial);
+            right: var(--right, initial);
+            top: var(--top, initial);
+            color:  var(--color);
+            padding: 3px;
+            border-radius: 3px;
+            /* width: 68px; */
+            font-size: var(--fontSize);
+            border: 1px solid var(--color);
+        }
+
+
+        .block {
+            --block-color: red;
+
+            color: var(--block-color);
+        }
+
+        .block .foo {
+            color: var(--block-color);
+        }
+
+        .outer-block {
+            color: var(--block-color);
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- bootstrap -->
+
+
+    <!-- 
+        CSS Vars (global, local, style)
+        + не требуют никаких инструментов
+        + DOM поддержка
+    -->
+
+    <!-- <span class="title">some text</span> -->
+
+    <span class="tooltip"
+     style="
+        --color: green;
+        --fontSize: 7px;
+        --left: calc(100% + 10px);
+     ">
+     show</span>
+
+    <hr />
+     <span class="tooltip"
+     style="
+        --color: blue;
+        --fontSize: 17px;
+        --right: calc(100% + 10px);
+        --top: 50%;
+     ">
+     show - 2</span>
+
+     <div class="block">
+         11
+         <div class="foo">
+             111
+         </div>
+     </div>
+
+     <div class="outer-block">
+        123
+     </div>
+    <!-- attrs -->
+</body>
+</html>
