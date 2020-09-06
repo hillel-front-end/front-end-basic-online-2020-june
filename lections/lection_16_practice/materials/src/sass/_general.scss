@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    padding-top: 24px;
+}
+
+ul {
+    list-style: none;
+}
+
+.title {
+    color: $black;
+    font-family: $base-font;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.button {
+    @include button();
+}

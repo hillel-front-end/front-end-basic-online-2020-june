@@ -1,0 +1,16 @@
+.main {
+    @include flex(row);
+    margin-left: 236px;
+    height: 100%;
+}
+
+.left-side {
+    width: 60%;
+    height: 100%;
+}
+
+.right-side {
+    width: 40%;
+    min-width: 449px;
+    height: 100%;
+}

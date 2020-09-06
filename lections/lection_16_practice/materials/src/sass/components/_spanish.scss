@@ -1,0 +1,14 @@
+.spanish {
+    @include gray-rectangle;
+    @include flex(row);
+    margin-top: 24px;
+    padding: 8px;
+
+    &__ball-wrapper {
+        width: 64px;
+        height: 64px;
+        background-color: $white;
+        border-radius: 12px;
+        @include flex(row, center, center);
+    }
+}

@@ -1,0 +1,33 @@
+@mixin flex($fd: row, $jc: flex-start, $ai: stretch) {
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin gray-rectangle {
+    background-color: $gray;
+    border-radius: 14px;
+}
+
+
+@mixin button {
+    display: inline-block;
+    background-color: $gray;
+    border-radius: 8px;
+    border: 2px solid  $black;
+    color: $black;
+    width: 120px;
+    height: 40px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+    &--fill {
+        background-color: $black;
+        color: $white;
+        border: 2px solid transparent;
+    }
+
+    @include flex(row, center, center);
+}

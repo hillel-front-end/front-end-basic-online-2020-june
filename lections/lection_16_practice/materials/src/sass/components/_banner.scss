@@ -1,0 +1,24 @@
+.banner {
+    height: 160px;
+    margin-top: 31px;
+    padding: 0px 31.5px;
+    position: relative;
+    @include gray-rectangle;
+    @include flex(column, center);
+
+    &__welcome {
+        position: absolute;
+        right: 104px;
+        bottom: 0px;
+    }
+
+    &__title {
+        font-size: 36px;
+        line-height: 57px;
+    }
+
+    &__descr {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
