@@ -10,6 +10,8 @@ html, body {
   min-height: 100%; }
 
 .grid-container .cell {
+  background-color: #28314E;
+  border: 1px solid #212941;
   border-radius: 5px;
   padding: 8px 15px;
   color: #ffffff;
@@ -17,11 +19,7 @@ html, body {
   font-family: roboto; }
 
 .grid-container {
-  display: grid;
-  grid-template: minmax(100px, auto) 1fr minmax(100px, auto)/minmax(100px, 200px) 1fr minmax(100px, 200px);
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  grid-template-areas: 'header header header' 'left-side main right-side' 'footer footer footer'; }
+  display: grid; }
 
 .header {
   grid-area: header; }
@@ -37,14 +35,5 @@ html, body {
 
 .footer {
   grid-area: footer; }
-
-.footer, .header {
-  background-color: red; }
-
-.main {
-  background-color: greenyellow; }
-
-.left-side, .right-side {
-  background-color: yellow; }
 
 /*# sourceMappingURL=main.css.map */
