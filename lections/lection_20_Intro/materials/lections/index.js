@@ -1,0 +1,1 @@
+// typescript(index.ts) -> JavaScript(index.js)
