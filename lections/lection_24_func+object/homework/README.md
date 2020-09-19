@@ -2,6 +2,8 @@
 
 * http://learn.javascript.ru/function-declaration-expression
 * https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Functions
+* https://learn.javascript.ru/object
+* https://learn.javascript.ru/object-for-in
 
 # Практика
 
